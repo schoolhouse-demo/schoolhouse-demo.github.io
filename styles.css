@@ -1,0 +1,69 @@
+h3 {
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: lightblue;
+}
+
+#container {
+  background-color: white;
+  margin: 50px;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+#parentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#workBar {
+  flex: 2;
+}
+
+#skillsBar {
+  flex: 1;
+}
+
+#myDiv {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#skills {
+  background-color: red;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+@media (max-width: 600px) {
+  #parentContainer {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+}
